@@ -5,7 +5,7 @@
   "typings": "dist/index.d.ts",
   "scripts": {
     "start": "tsdx watch",
-    "ms": "nodemon --watch dist/bookshelf_wechaty.cjs.development.js --delay 5 play/ms.js",
+    "ms": "nodemon --watch dist/zmore.cjs.development.js --delay 5 play/ms.js",
     "build": "tsdx build",
     "test": "tsdx test",
     "lint": "tsdx lint",
@@ -47,16 +47,16 @@
     "singleQuote": true,
     "trailingComma": "es5"
   },
-  "name": "bookshelf_wechaty",
+  "name": "zmore",
   "author": "zacard.lin",
-  "module": "dist/bookshelf_wechaty.esm.js",
+  "module": "dist/zmore.esm.js",
   "size-limit": [
     {
-      "path": "dist/bookshelf_wechaty.cjs.production.min.js",
+      "path": "dist/zmore.cjs.production.min.js",
       "limit": "10 KB"
     },
     {
-      "path": "dist/bookshelf_wechaty.esm.js",
+      "path": "dist/zmore.esm.js",
       "limit": "10 KB"
     }
   ],

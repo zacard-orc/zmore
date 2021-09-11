@@ -7,7 +7,7 @@ yarn-error.log*
 lerna-debug.log*
 
 src/conf/confDb.ts
-src/conf/confEnvv.td
+src/conf/confEnvv.ts
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
