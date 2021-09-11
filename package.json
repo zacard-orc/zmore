@@ -1,0 +1,82 @@
+{
+  "version": "0.1.9",
+  "license": "MIT",
+  "main": "dist/index.js",
+  "typings": "dist/index.d.ts",
+  "scripts": {
+    "start": "tsdx watch",
+    "ms": "nodemon --watch dist/bookshelf_wechaty.cjs.development.js --delay 5 play/ms.js",
+    "build": "tsdx build",
+    "test": "tsdx test",
+    "lint": "tsdx lint",
+    "prepare": "tsdx build",
+    "size": "size-limit",
+    "analyze": "size-limit --why",
+    "version": "conventional-changelog -i CHANGELOG.md -s && git add CHANGELOG.md && git push -u origin master"
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "dependencies": {
+    "@commitlint/cli": "^12.0.1",
+    "@commitlint/config-conventional": "^12.0.1",
+    "@commitlint/utils": "^9.0.1",
+    "commitlint-config-gitmoji": "^2.2.3",
+    "conventional-changelog-cli": "^2.1.1",
+    "conventional-changelog-conventionalcommits": "^4.5.0",
+    "image-size": "^1.0.0",
+    "nodeman": "^1.1.2",
+    "qrcode-terminal": "^0.12.0",
+    "wechaty": "^0.60.10",
+    "wechaty-puppet-padlocal": "^0.4.1",
+    "winston": "^3.3.3"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "peerDependencies": {},
+  "husky": {
+    "hooks": {
+      "pre-commit": "tsdx lint"
+    }
+  },
+  "prettier": {
+    "printWidth": 80,
+    "semi": true,
+    "singleQuote": true,
+    "trailingComma": "es5"
+  },
+  "name": "bookshelf_wechaty",
+  "author": "zacard.lin",
+  "module": "dist/bookshelf_wechaty.esm.js",
+  "size-limit": [
+    {
+      "path": "dist/bookshelf_wechaty.cjs.production.min.js",
+      "limit": "10 KB"
+    },
+    {
+      "path": "dist/bookshelf_wechaty.esm.js",
+      "limit": "10 KB"
+    }
+  ],
+  "devDependencies": {
+    "@size-limit/preset-small-lib": "^5.0.3",
+    "@types/mysql": "^2.15.19",
+    "@types/nodemailer": "^6.4.4",
+    "@types/redis": "^2.8.31",
+    "dayjs": "^1.10.6",
+    "husky": "^7.0.2",
+    "moment": "^2.29.1",
+    "mysql": "^2.18.1",
+    "mysql2": "^2.3.0",
+    "nodemailer": "^6.6.3",
+    "redis": "^3.1.2",
+    "sequelize": "^6.6.5",
+    "size-limit": "^5.0.3",
+    "tsdx": "^0.14.1",
+    "tslib": "^2.3.1",
+    "typescript": "^4.4.2",
+    "uuid": "^8.3.2"
+  }
+}
