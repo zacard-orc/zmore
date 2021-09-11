@@ -36,5 +36,7 @@ yarn ms
 
 # Author
 ```text
-林磊胤，野生前端
+林磊胤，野生前端，Base 上海
+
+工作联系Wechat：llysonylin2012  / 13816025562
 ```
